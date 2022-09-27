@@ -1,0 +1,43 @@
+{
+  "name": "fazendeiros",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check build-only",
+    "preview": "vite preview --port 4173",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --noEmit",
+    "lint": "eslint --ext .ts,.vue,.js src",
+    "lint:fix": "eslint --ext .ts,.vue,.js src --fix src"
+  },
+  "dependencies": {
+    "@ethersproject/providers": "^5.7.1",
+    "@walletconnect/web3-provider": "^1.8.0",
+    "bootstrap": "^5.2.1",
+    "bootstrap-icons": "^1.9.1",
+    "ethers": "^5.7.1",
+    "pinia": "^2.0.17",
+    "vue": "^3.2.37",
+    "vue-gtag": "^2.0.1",
+    "vue-i18n": "^9.2.2",
+    "vue-router": "^4.1.3",
+    "web3modal": "^1.9.9"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@types/node": "^16.11.47",
+    "@vitejs/plugin-vue": "^3.0.1",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^11.0.0",
+    "@vue/tsconfig": "^0.1.3",
+    "eslint": "^8.21.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1",
+    "sass": "^1.54.9",
+    "sass-loader": "^13.0.2",
+    "typescript": "~4.7.4",
+    "vite": "^3.0.4",
+    "vue-tsc": "^0.39.5"
+  }
+}

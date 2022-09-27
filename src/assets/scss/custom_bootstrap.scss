@@ -1,0 +1,70 @@
+// Brand colors (SASS Variables)
+$brand-blue: #347FC4;
+$brand-dark: #1E1E1E;
+$brand-yellow: #C1DF1F;
+$brand-gray-input: #9C9FAB;
+$brand-gray: #3C3E46;
+$brand-white: #ffffff;
+
+// Brand colors (CSS Variables)
+// TODO: For some reason, I can't seem to be able to access SASS variables in here
+body {
+    --brand-blue: #347FC4;
+    --brand-dark: #1E1E1E;
+    --brand-yellow: #C1DF1F;
+    --brand-gray-input: #9C9FAB;
+    --brand-gray: #3C3E46;
+    --brand-white: #ffffff;
+}
+
+// Brand Typography
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;900&display=swap');
+
+// BS colors
+$primary: $brand-yellow;
+$link-color: $brand-yellow;
+$link-decoration: none;
+
+// To change CSS variables, we use body instead of :root or html, to override the root variables
+body {
+    // --bs-body-bg: green;
+    // --bs-dark-rgb: 2, 48, 71;
+    --bs-font-sans-serif: "Inter", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+    --bs-body-color: var(--brand-white);
+    --bs-body-bg: var(--brand-dark);
+}
+
+// Accordion
+$accordion-bg: $brand-dark;
+$accordion-button-active-bg: $brand-dark;
+$accordion-button-active-color: $brand-white;
+$accordion-button-focus-border-color: $brand-yellow;
+
+
+// Other general styles
+.main-container {
+    min-height: 600px;
+}
+
+form .help-message {
+    color: $brand-gray;
+    font-size: 0.8rem;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    font-style: italic;
+}
+
+.section-title + .section-subtitle {
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.section-introduction {
+    font-size: 1.25rem;
+}
