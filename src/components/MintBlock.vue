@@ -29,7 +29,7 @@
 <template>
     <div id="mint-block" class="container">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-9">
                 <h2 class="section-title">{{ $t("mint.title") }}</h2>
                 <h5 class="section-subtitle">{{ $t("mint.subtitle", { supplyLeft: supplyLeft }) }}</h5>
                 <div class="section-intro mb-4">
@@ -56,16 +56,22 @@
                             <button class="btn btn-primary">{{ $t("mint.mintButton") }}</button>
                         </p>
                     </div>
+                    <!--
                     <button
                         v-if="!wallet.state.isConnected"
                         class="btn btn-primary"
                         @click.stop="connectDisconnectSwitch"
                     >
                         {{ $t("mint.connectButton") }}
+                    </button> -->
+                    <button class="btn btn-gray-input" disabled>
+                        {{ $t("mint.comingSoonButton") }}
                     </button>
                 </div>
             </div>
-            <div class="col-lg-4 order-first order-lg-last">IMAGEN DEL TOKEN</div>
+            <div id="nft-image" class="col-lg-3 order-first order-lg-last">
+                <img src="@/assets/images/nft-image.png" />
+            </div>
         </div>
     </div>
 </template>
@@ -78,10 +84,19 @@
         border-radius: 10px;
     }
 
+    .section-intro {
+        text-align: justify;
+    }
+
     .web3-actions .btn-link {
         margin-bottom: 20px;
         padding: 0;
         vertical-align: top;
         font-size: 100%;
+    }
+
+    #nft-image img {
+        width: 100%;
+        /* box-shadow: 0 0 25px 5px rgba(255, 255, 255, 0.4); */
     }
 </style>

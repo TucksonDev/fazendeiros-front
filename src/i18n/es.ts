@@ -4,7 +4,7 @@ export default {
         es: "Español",
     },
     menu: {
-        whitepaperLinkLabel: "Whitepaper",
+        whitepaperLinkLabel: "White paper",
         podcastLinkLabel: "Podcast",
     },
     banner: {
@@ -15,7 +15,7 @@ export default {
     informationSection: {
         leftBoxTitle: "Cómo participar",
         leftBoxContents:
-            "<p><strong>Miembro pasivo</strong>: Compra tu token y vota por las propuestas de inversión.</p><p><strong>Miembro activo</strong>: Propón inversiones, gestiona proyectos o forma parte de equipos de inversión.</p>",
+            "<p><strong>Miembros pasivos</strong>: Compra tu token y vota por las propuestas de inversión.</p><p><strong>Miembros activos</strong>: Propón inversiones, gestiona proyectos o forma parte de equipos de inversión.</p>",
         rightBoxTitle: "Calendario de mintado de tokens de membresía",
         rightBoxContents:
             "<p>El próximo mintado de tokens de Fazendeiros se realizará a finales de 2022. <a href='#email-registration'>Introduce tu e-mail abajo para que te informemos de la próxima ronda.</a></p>",
@@ -30,6 +30,7 @@ export default {
         connectButton: "Conectar",
         disconnectButton: "Desconectar",
         mintButton: "Mintar",
+        comingSoonButton: "Próximamente",
     },
     faqs: {
         title: "Preguntas frecuentes",
@@ -44,7 +45,7 @@ export default {
             "Los miembros de Fazendeiros pueden ser miembros activos, proponiendo inversiones, gestionando equipos y votando los próximos pasos de la DAO. También pueden ser miembros pasivos, simplemente inversores que compraron el Token y participan en las votaciones si así lo desean.",
         faq4Question: "¿Cómo obtiene rendimientos un miembro de Fazendeiros DAO?",
         faq4Answer:
-            "Existen dos formas de obtener rendimientos en la DAO en función de si el miembro es activo o no.<br />Los miembros activos podrán obtener rendimientos en función del éxito de sus propuestas, gestión y del valor que aporten a la DAO. Para saber más en detalle sobre este punto puedes leer nuestro Whitepaper.<br />Los inversores pasivos obtendrán sus rendimientos con la valoración que pueda tener el Token y con la distribución de dividendos que la DAO decida repartir en cada momento a los poseedores de cada Token.",
+            "Existen dos formas de obtener rendimientos en la DAO en función de si el miembro es activo o no.<br />Los miembros activos podrán obtener rendimientos en función del éxito de sus propuestas, gestión y del valor que aporten a la DAO. Para saber más en detalle sobre este punto puedes leer nuestro White paper.<br />Los inversores pasivos obtendrán sus rendimientos con la valoración que pueda tener el Token y con la distribución de dividendos que la DAO decida repartir en cada momento a los poseedores de cada Token.",
         faq5Question: "¿Cúal es el proceso de votación de las propuestas de la DAO?",
         faq5Answer:
             "Todos los miembros pueden proponer nuevas inversiones y ventas de activos. Además pueden proponer nuevos procesos de trabajo y establecer la mejor manera de gestionar la DAO. Cada propuesta será votada digitalmente, utilizando Snapshot (plataforma de gobernanza) y todos los dueños del Token podrán votar conectando su cartera. Una vez votada la propuesta se procederá a ejecutar el resultado dicha votación.",

@@ -52,4 +52,10 @@
             font-size: 48px;
         }
     }
+
+    @media (max-width: 420px) {
+        .banner-title {
+            font-size: 2.5rem;
+        }
+    }
 </style>
