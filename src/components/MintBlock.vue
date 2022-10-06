@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import { ref } from "vue";
+    // import { ref } from "vue";
     import { useWalletStore } from "@/helpers/wallet-store";
     import { chainName, networkIsValid } from "../constants";
 
@@ -15,15 +15,17 @@
         }
     };
 
+    /*
     const supplyLeft = ref(100);
-    /*const getNewSupply = () => {
+    const getNewSupply = () => {
         return supplyLeft.value;
     };
     const updateSupply = () => {
         supplyLeft.value = getNewSupply();
         setTimeout(updateSupply, 5000);
     };
-    updateSupply();*/
+    updateSupply();
+    */
 </script>
 
 <template>
@@ -31,7 +33,7 @@
         <div class="row">
             <div class="col-lg-9">
                 <h2 class="section-title">{{ $t("mint.title") }}</h2>
-                <h5 class="section-subtitle">{{ $t("mint.subtitle", { supplyLeft: supplyLeft }) }}</h5>
+                <!-- <h5 class="section-subtitle">{{ $t("mint.subtitle", { supplyLeft: supplyLeft }) }}</h5> -->
                 <div class="section-intro mb-4">
                     {{ $t("mint.intro") }}
                 </div>
