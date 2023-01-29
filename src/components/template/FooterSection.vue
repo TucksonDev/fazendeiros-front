@@ -14,6 +14,11 @@
             <div>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
+                        <a :href="MenuLinks.APPLICATION_FORM" target="_blank" class="nav-link">
+                            {{ $t("menu.applicationFormLinkLabel") }}
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a :href="MenuLinks.WHITEPAPER" target="_blank" class="nav-link">
                             {{ $t("menu.whitepaperLinkLabel") }}
                         </a>
@@ -31,6 +36,11 @@
                     <li v-if="SocialNetworks.DISCORD" class="nav-item">
                         <a :href="SocialNetworks.DISCORD" target="_blank" class="nav-link">
                             <i class="bi bi-discord"></i>
+                        </a>
+                    </li>
+                    <li v-if="SocialNetworks.SNAPSHOT" class="nav-item">
+                        <a :href="SocialNetworks.SNAPSHOT" target="_blank" class="nav-link">
+                            <i class="bi bi-lightning-charge-fill"></i>
                         </a>
                     </li>
                 </ul>

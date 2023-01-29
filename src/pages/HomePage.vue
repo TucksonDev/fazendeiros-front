@@ -23,10 +23,12 @@
                 <div class="col-lg-8 offset-lg-4">
                     <InformationSectionBox
                         icon-class="suit-diamond-fill"
-                        :box-title="
-                            $t('informationSection.rightBoxTitle', { applicationFormLink: MenuLinks.APPLICATION_FORM })
+                        :box-title="$t('informationSection.rightBoxTitle')"
+                        :box-contents="
+                            $t('informationSection.rightBoxContents', {
+                                applicationFormLink: MenuLinks.APPLICATION_FORM,
+                            })
                         "
-                        :box-contents="$t('informationSection.rightBoxContents')"
                     />
                 </div>
             </div>

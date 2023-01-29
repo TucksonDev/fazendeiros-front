@@ -1,6 +1,6 @@
 export enum SocialNetworks {
     TWITTER = "https://twitter.com/FazendeirosDao",
-    DISCORD = "",
+    DISCORD = "https://discord.gg/Ph5NUSFpnc",
     SNAPSHOT = "https://snapshot.org/#/fazendeirosdao.eth",
 }
 
