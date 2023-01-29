@@ -1,8 +1,9 @@
 <script setup lang="ts">
     import PageBanner from "@/components/PageBanner.vue";
     import InformationSectionBox from "@/components/InformationSectionBox.vue";
-    import MintBlock from "../components/MintBlock.vue";
+    import NoMintBlock from "../components/NoMintBlock.vue";
     import FaqsBlock from "@/components/FaqsBlock.vue";
+    import { MenuLinks } from "@/constants";
 </script>
 
 <template>
@@ -22,13 +23,15 @@
                 <div class="col-lg-8 offset-lg-4">
                     <InformationSectionBox
                         icon-class="suit-diamond-fill"
-                        :box-title="$t('informationSection.rightBoxTitle')"
+                        :box-title="
+                            $t('informationSection.rightBoxTitle', { applicationFormLink: MenuLinks.APPLICATION_FORM })
+                        "
                         :box-contents="$t('informationSection.rightBoxContents')"
                     />
                 </div>
             </div>
         </div>
-        <MintBlock />
+        <NoMintBlock />
         <FaqsBlock />
     </main>
 </template>

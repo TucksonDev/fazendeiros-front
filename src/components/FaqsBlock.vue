@@ -1,5 +1,6 @@
 <script setup lang="ts">
     import FaqsItem from "@/components/FaqsItem.vue";
+    import { MenuLinks } from "@/constants";
 </script>
 
 <template>
@@ -7,7 +8,11 @@
         <h2 class="section-title">{{ $t("faqs.title") }}</h2>
         <div id="faqsBlock" class="accordion">
             <FaqsItem :question-text="$t('faqs.faq1Question')" :answer-text="$t('faqs.faq1Answer')" item-id="One" />
-            <FaqsItem :question-text="$t('faqs.faq2Question')" :answer-text="$t('faqs.faq2Answer')" item-id="Two" />
+            <FaqsItem
+                :question-text="$t('faqs.faq2Question')"
+                :answer-text="$t('faqs.faq2Answer', { applicationFormLink: MenuLinks.APPLICATION_FORM })"
+                item-id="Two"
+            />
             <FaqsItem :question-text="$t('faqs.faq3Question')" :answer-text="$t('faqs.faq3Answer')" item-id="Three" />
             <FaqsItem :question-text="$t('faqs.faq7Question')" :answer-text="$t('faqs.faq7Answer')" item-id="Seven" />
             <FaqsItem :question-text="$t('faqs.faq4Question')" :answer-text="$t('faqs.faq4Answer')" item-id="Four" />
